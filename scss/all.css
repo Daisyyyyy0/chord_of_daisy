@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style-type: none;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+.banner {
+  width: 100%;
+  height: 100vh;
+  background-color: #ccc;
+  background: linear-gradient(110deg, #e195a3 50%, transparent 50%) center center/100% 100%, url("../img/banner_bg.jpg") right center/auto 100%;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.banner-txt {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.banner-txt h1 {
+  font-size: 5rem;
+  font-weight: 800;
+  border-bottom: 1px solid #333;
+}
+
+.banner-txt h1 small {
+  display: block;
+  font-size: 3.5rem;
+  font-weight: 400;
+}
+
+.banner-txt h2 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.banner-txt p {
+  font-size: 1.85rem;
+  font-weight: 300;
+}
+
+.wrap {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.carte .item {
+  width: 25%;
+  position: relative;
+}
+
+.carte .item img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.carte .item:hover .txt {
+  opacity: 1;
+}
+
+.carte .item .txt {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1.25rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  opacity: 0;
+  -webkit-transition: .35s;
+  transition: .35s;
+}
+
+.carte .item .txt h3 {
+  font-size: 2rem;
+  color: #faebaa;
+}
+
+.carte .item .txt p {
+  font-size: 1.25rem;
+  color: #fff;
+  font-weight: 100;
+}
+
+.carte .item h3:after {
+  content: '';
+  display: block;
+  width: 0%;
+  height: 2px;
+  margin: .625rem 0;
+  background-color: #ff0;
+  -webkit-transition: width .5s .1s;
+  transition: width .5s .1s;
+}
+
+.carte .item:hover h3:after {
+  width: 100%;
+}
+
+.feature .wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.feature .item {
+  width: 33.33%;
+  margin: 1rem;
+  text-align: center;
+}
+
+.feature .item h2 {
+  font-weight: 800;
+  border-bottom: 1px solid #888;
+  padding-bottom: .3em;
+  margin-bottom: 0.4em;
+}
+
+.feature .item p {
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+.feature .item img {
+  width: 100%;
+}
+
+.carte {
+  margin: 3rem 0;
+}
+
+.feature {
+  margin: 10rem 0;
+}
+/*# sourceMappingURL=all.css.map */
