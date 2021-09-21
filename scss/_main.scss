@@ -108,13 +108,34 @@
 .feature{
     .wrap{
         display: flex;
-        align-items: center;
-        // background-color: #007;
+        align-items:stretch;
+        justify-content: center;
+        // height: auto;
+        background-color: #003;
     }
     .item{
+        position: relative;
         width: 33.33%;
+        height: 100%;
         margin: 1rem;
         text-align: center;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        .txt{
+            padding: 1.25rem;
+            &::before{
+                content: '';
+                position: absolute;
+                width: 0;
+                height: 0;
+                left: 0;
+                top: 0;
+                border-top: 50px solid #f00;
+                border-left: 10.5rem solid #0f0;
+                border-right: 10.5rem solid #0f0;
+
+            }
+        }
         h2{
             font-weight: 800;
             border-bottom: 1px solid #888;
